@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+main {
+   
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+section {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 1000px;
+    
+}
+
+section h2 {
+    text-align: center;
+}
+.foto img{
+    width: 200px;
+    border-radius: 200px;
+}
+.about{
+    padding: 20px;
+    display: flex;
+    
+}
+.text{
+    padding: 20px;
+    text-align: justify;
+}
+
+
+.projeto {
+    margin: 20px 2%;
+    width: 290px;
+}
+.projetos{
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+.projeto img{
+    max-width: 100%;
+    height: auto;
+    width: 280px;
+    height: 154px;
+    min-width: 290px;
+}
+.projeto h3 {
+    margin: 10px 0;
+}
+
+.projeto p {
+    text-align: justify;
+    
+}
+
+form {
+    width: 100%;
+}
+
+form label {
+    margin: 10px 0;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    
+    padding: 10px;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    }
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projetos{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    }
+    footer{
+        flex-direction: column;
+        font-size: smaller;
+    }
+}
